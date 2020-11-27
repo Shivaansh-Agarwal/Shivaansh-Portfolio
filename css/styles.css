@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root{
+    --primary: #7C3AED;
+    --gray: #f3f4f6;
+    --dark-gray: #6B7280;
+}
+body{
+    font-family: 'Montserrat', 'sans-serif';
+}
+hr {
+    margin: 2rem 0;
+}
+.right-aligned {
+    text-align: right;
+}
+
+
+/*==============================*/
+/*@Containers*/
+.container-fluid {
+    padding: 0rem 1rem;
+}
+.container-center {
+    margin: auto;
+    padding: 0rem 1rem;
+    max-width: 650px;
+}
+
+
+/*==============================*/
+/* links*/
+.link-primary {
+    background-color: var(--primary);
+    color: white;
+    width: max-content;
+    min-width: 140px;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none; /*To remove the underline from the link*/
+    display: inline-block;
+    margin-bottom: 1rem; 
+}
+.link-secondary {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    width: max-content;
+    min-width: 140px;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.link {
+    color: white;
+    text-decoration: none;
+}
+.link-active {
+    font-weight: bold;
+}
+
+
+/*==============================*/
+/* lists */
+.list-unordered-nonBullet {
+    list-style: none;
+}
+.list-item-inline {
+    display: inline-block;
+    padding: 0rem 0.8rem;
+}
+
+
+/*==============================*/
+/* @Navigation */
+.navigation {
+    background-color: var(--primary);
+    padding: 1rem 0rem;
+    color: white;
+    border-bottom-left-radius: 2rem;
+}
+.navigation .brand {
+    font-weight: bold;
+}
+
+
+/*==============================*/
+/* footer */
+.footer {
+    background-color: var(--primary);
+    color: white;
+    padding: 2rem 0rem 1rem 0rem;
+    border-top-right-radius: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.footer-heading {
+    font-size: small;
+}
+.footer ul {
+    padding-inline-start: 0px;
+}
+.footer a {
+    text-decoration: none;
+    color: white
+}
+
+
+/*==============================*/
+/** @HEADER **/
+.header {
+    color: var(--dark-gray);
+    display: block;
+    padding: 2rem 0rem;
+}
+.header img {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+.heading {
+    margin: auto;
+    max-width: 450px;
+}
+.heading-inverted {
+    color: var(--primary);
+}
+
+/*==============================*/
+/** section **/
+.section {
+    padding: 2rem 0rem;
+}
+.ow {
+    background-color: var(--gray);
+}
+
+
+/*==============================*/
+/** logo **/
+.logo {
+    height: 40px;
+    width: 40px;
+}

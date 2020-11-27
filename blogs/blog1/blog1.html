@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Basics Part-1</title>
+    <link rel="stylesheet" href="\css\styles.css">
+</head>
+<body>
+
+    <!-- //TODO: Breadcrumb-->
+
+    <!-- NAVIGATION-->
+    <nav class="navigation">
+        <div class="container-fluid">
+            <div class="brand">Shivaansh Agarwal</div>
+            <ul class="list-unordered-nonBullet right-aligned">
+                <li class="list-item-inline">
+                    <a href="\index.html" class="link">Home</a>
+                </li>
+                <li class="list-item-inline">
+                    <a href="\projects.html" class="link">Projects</a>
+                </li>
+                <li class="list-item-inline">
+                    <a href="\blogs.html" class="link link-active">Blogs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HEADER-->
+    <div class="container-center">
+        <h2>Version Control with Git PART-1</h2>
+        <small>November 27, 2020</small><br>
+        <img src="blog1-header-img.jpg" alt="Git Part-1" width="800px" height="400px">
+        <section>
+            <h3>Git Commit</h3>
+            <ul>
+                <li>Git manages versions of projects.</li>
+                <li>Each version of a project is called a commit.</li>
+                <li>Each commit is a snapshot of the entire project. So one might think that with every commit git stores many copies of the same file.
+                    But this is not howw git works. Behind the scenes, git is very efficient at storing commits. Each unique files is stored only once.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Project History</h3>
+            <ul>
+                <li>
+                    The collection of commits contain the History of the project.
+                    <ul>
+                        <li>You can review the history.</li>
+                        <li>You can "undo" the change.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Branches</h3>
+            <ul>
+                <li>All commits belong to a branch. It is an independent line of development of the project.</li>
+                <li>By default there is a single branch, it's called master.</li>
+                <li>Branches can be used to independently work on the project without disrupting the rest of the project.</li>
+                <li>The independence of branches allows teams to scale their work.
+                <img src="blog1_1.PNG" alt="" width="400px" height="200px"><br>
+                Here commit B is not aware of what is going on in other branches.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Pull Request</h3>
+            <ul>
+                <li>A request to merge your master branch into another branch.</li>
+                <li>PRs can include team review and testing , improving product quality.</li>
+                <li>It is a request for others to review and approve the changes made to the project on a branch.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Version Control</h3>
+            From the perspective of
+            <ol>
+                <li>CONTENT: It manages a collection of changing and improving files which we can call a project. The complete history of the project is tracked and available
+                    at any time.
+                </li>
+                <li>
+                    TEAMS: It also supports teams working on that colection of files. Helps support collaboration on the project and improves quality through facilitating team communication & reviews.
+                </li>
+                <li>
+                    AGILITY: The ability to adapt quickly and constructively to a changing environment. It does this by managing small changes to a project and by allowing you to
+                    easily fix, test or undo any ideas and changes that the team makes.
+                </li>
+            </ol>
+        </section>
+    </div>
+    
+</body>
+</html>
