@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 :root{
-    --primary: #7C3AED;
+    --primary: #1F2833;
+    --secondary: #00BFA6;
+    --tertiary: #f50057;
     --gray: #f3f4f6;
     --dark-gray: #6B7280;
 }
 body{
     font-family: 'Montserrat', 'sans-serif';
-}
-hr {
-    margin: 2rem 0;
+    /*font-family: 'Open Sans', sans-serif;*/
 }
 .right-aligned {
     text-align: right;
@@ -31,19 +32,22 @@ hr {
 /*==============================*/
 /* links*/
 .link-primary {
-    background-color: var(--primary);
-    color: white;
+    background-color: var(--secondary);
+    color: var(--primary);
     width: max-content;
     min-width: 140px;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
     text-decoration: none; /*To remove the underline from the link*/
     display: inline-block;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 1.2rem;
 }
 .link-secondary {
-    border: 1px solid var(--primary);
-    color: var(--primary);
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
     width: max-content;
     min-width: 140px;
     border-radius: 0.5rem;
@@ -51,9 +55,23 @@ hr {
     text-decoration: none;
     display: inline-block;
     margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+.link-tertiary {
+    border: 1.5px solid var(--tertiary);
+    color: var(--tertiary);
+    width: max-content;
+    min-width: 140px;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 .link {
-    color: white;
+    color: var(--secondary);
     text-decoration: none;
 }
 .link-active {
@@ -77,7 +95,7 @@ hr {
 .navigation {
     background-color: var(--primary);
     padding: 1rem 0rem;
-    color: white;
+    color: var(--secondary);
     border-bottom-left-radius: 2rem;
 }
 .navigation .brand {
@@ -135,6 +153,9 @@ hr {
 .ow {
     background-color: var(--gray);
 }
+.section h2{
+    color: var(--primary);
+}
 
 
 /*==============================*/
@@ -142,4 +163,53 @@ hr {
 .logo {
     height: 40px;
     width: 40px;
+}
+
+
+/*==============================*/
+/** PROJECT & BLOGs Common **/
+.page-heading {
+    margin: 0rem;
+}
+/*==============================*/
+/** PROJECT **/
+.project-section {
+    margin-bottom: 2rem;
+}
+.date {
+    color: var(--dark-gray);
+}
+.project-heading {
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+.project-desc {
+    margin-top: 0.2rem;
+}
+
+
+/*==============================*/
+/** BLOGS **/
+.header-cover-img {
+    max-width: 700px;
+    max-height: 500px;
+    margin: auto;
+    display: block;
+}
+.blog-section {
+    margin-bottom: 2rem;
+}
+.blog-list-heading {
+    margin-bottom: 0.5rem;
+}
+.blog-link {
+    color: var(--secondary);
+    text-decoration: none;
+    /*transition: color .5s;*/
+}
+.blog-link:hover {
+    color: #009884;
+}
+.blog-desc {
+    margin-top: 0.2rem;
 }
